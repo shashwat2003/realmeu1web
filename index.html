@@ -1,216 +1,42 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link
-      href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900|Quicksand:400,700|Questrial"
-      rel="stylesheet"
-    />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
-    <style>
-      body {
-        margin: 0px;
-        padding: 0 0;
-        background-image: url("images/bg4.jpg");
-        background-repeat: repeat-y;
-        font-family: "Questrial", sans-serif;
-        font-size: 12pt;
-        color: #E5EEFF;
-      }
-
-      a {
-        display: block;
-        text-decoration: none;
-        color: #FFFFFF;
-      }
-      #menu {
-      }
-      #menu ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 30%;
-        width: 40%;
-        overflow: hidden;
-        background-color: #ffffff00;
-      }
-      .sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-      }
-      #menu li {
-        float: left;
-        width: 25%;
-        text-transform: uppercase;
-      }
-
-      #menu li a {
-        display: block;
-        text-decoration: none;
-        text-align: center;
-        font-weight: 900;
-        padding: 14px 16px;
-        background-color: #FFFFFF;
-        color: #000000;
-      }
-      #menu li a:hover {
-        text-decoration: none;
-        color: #FFFFFF;
-        background-color: #027DEA;
-      }
-      #menu li a.active {
-        text-decoration: none;
-        color: #FFFFFF;
-        background-color: #027DEA;
-      }
-      #header {
-        padding-top: 5%;
-        padding-bottom: 5%;
-        font-weight: 900;
-        color: #FFFFFF;
-        font-size: 4em;
-        text-align: center;
-      }
-      #gallery ul {
-        list-style-type: none;
-        margin: 0;
-        padding: 0 5%;
-        width: 90%;
-        overflow: hidden;
-        background-color: #ffffff00;
-      }
-      #gallery li {
-        float: left;
-        width: 20%;
-        padding-left: 3%;
-        padding-bottom: 3%;
-        text-align: center;
-      }
-      #gallery li a {
-        display: block;
-        background-color: rgba(23, 67, 88, 0.5);
-        padding: 14px 16px;
-      }
-      #gallery li a:hover {
-        background-color: rgba(23, 67, 88, 0.8);
-      }
-      #gallery li a:hover ~ #buttonbox {
-        background-color: rgba(23, 67, 88, 0.8);
-      }
-
-      #gallery h1 {
-        font-size: 1.5em;
-        color: white;
-      }
-      #gallery h2 {
-        font-size: 1em;
-        padding-bottom: 10px;
-        font-weight: lighter;
-        line-height: 1.6;
-      }
-
-      #def {
-        padding: 30pt 10%;
-        color: #FF5733;
-        font-size: 2em;
-        text-align: center;
-      }
-
-      #buttonbox {
-        width: 100%;
-        background-color: rgba(23, 67, 88, 0.5);
-        padding-bottom: 16px;
-      }
-
-      .button {
-        display: block;
-        background-color: #027DEA;
-        border: none;
-        color: white;
-        padding: 15px 32px;
-        margin: 10px;
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 4px 2px;
-        cursor: pointer;
-      }
-      /*COPYRIGHT*/
-
-      #copyright {
-        overflow: hidden;
-        padding: 5em 0em;
-        border-top: 1px solid rgba(255, 255, 255, 0.08);
-        text-align: center;
-      }
-
-      #copyright p {
-        letter-spacing: 1px;
-        font-size: 0.9em;
-        color: rgba(255, 255, 255, 0.6);
-      }
-
-      #copyright a {
-        text-decoration: none;
-        color: rgba(255, 255, 255, 0.8);
-      }
-
-      /* MOBILE VIEW */
-      @media screen and (max-width: 700px) {
-        #menu ul {
-          padding: 0 0;
-          width: 100%;
-          font-size: 8pt;
-        }
-        #header {
-          font-size: 3em;
-        }
-        #gallery li {
-          float: none;
-          width: 98%;
-          padding-left: 1%;
-          padding-bottom: 5%;
-        }
-      }
-    </style>
-    <title>realme U1 | Lucifer</title>
-  </head>
-  <body>
-    <div id="header">
-      <a href="#">realme U1<br />Lucifer Communtiy</a>
-    </div>
-    <div id="menu">
-      <ul>
-        <li><a class="active">ROMs</a></li>
-        <li><a href="/kernels">Kernels</a></li>
-        <li><a href="/Recoveries">Recoveries</a></li>
-        <li><a href="/Misc">Misc</a></li>
-      </ul>
-    </div>
-    <div id="def">
-      All the custom firmwares for realme U1 at one place.
-    </div>
-    <div id="gallery">
-      <ul>
-        <li>
-          <a href="/AncientOS">
-            <img src="images/ancient.png" style="width:90%;" />
-            <h1>Ancient ROM</h1>
-            <h2>
-              Android Version:10<br />
-              Security Patch: October,2020<br />
-              GAPPS: Included<br />
-            </h2>
-          </a><div id="buttonbox">
-            <button
-              class="button"
-              onclick="document.location='https://drive.google.com/file/d/1H-nWRx8qikC5oJuTJCM4jsmHgQIie8VJ/view'"
-            >
-              Download
-            </button>
-          </div>
-        </li>
+	<head>
+		<link rel="stylesheet" href="default.css">
+		<link href="fonts.css" rel="stylesheet" type="text/css" media="all" />
+		<title>realme U1 | Home</title>
+	</head>
+	<body>
+		<div id = "cardbody">
+			<div id = "header">realme U1<br>Lucifer Communtiy</div>
+			<div id="menu">
+				<ul>
+					<li><a class="active">ROMs</a></li>
+					<li><a href="/kernels">Kernels</a></li>
+					<li><a href="/Recoveries">Recoveries</a></li>
+					<li><a href="/Misc">Misc</a></li>
+				</ul>
+			</div>
+			<div style = "text-align:center; color:#FF5733;font-size:2.5em;padding:30pt 0;">All the custom firware for realme U1 at one place.</div>
+			<div id="gallery">
+				<ul>
+					<li>
+						<a href="/AncientOS">
+						<img src="images/ancient.png" style="width:90%;" />
+						<h1>Ancient ROM</h1>
+						<h2>
+						  Android Version:10<br />
+						  Security Patch: October,2020<br />
+						  GAPPS: Included<br />
+						</h2>
+						</a><div id="buttonbox">
+						<button
+							class="button"
+							onclick="document.location='https://drive.google.com/file/d/1H-nWRx8qikC5oJuTJCM4jsmHgQIie8VJ/view'"
+						>
+						  Download
+						</button>
+						</div>
+					</li>
         <li>
           <a href="/BlissROM">
             <img src="images/bliss.png" style="width:90%;" />
@@ -421,28 +247,9 @@
           </div>
         </li>
       </ul>
-    </div>
-    <div id="copyright" class="container">
-      <p>
-        &copy; Developed By <a href="https://www.instagram.com/jaanijunior_13">Shashwat</a> | Background Image by <a href="https://unsplash.com/@r3dmax">Jonatan Pie@Unsplash</a>
-      </p>
-    </div>
+			</div>
 
-    <script>
-      window.onscroll = function() {
-        myFunction();
-      };
-
-      var navbar = document.getElementById("menu");
-      var sticky = navbar.offsetTop;
-
-      function myFunction() {
-        if (window.pageYOffset >= sticky) {
-          navbar.classList.add("sticky");
-        } else {
-          navbar.classList.remove("sticky");
-        }
-      }
-    </script>
-  </body>
+	</div>
+	
+	</body>
 </html>

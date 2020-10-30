@@ -1,0 +1,148 @@
+
+body {
+	font-family: JosefinSans;
+	font-size: 12pt;
+	color:white;
+	background-color:grey;
+	background-image: url("/images/bgm.jpg");
+	background-size: cover;
+	height: 100%;
+	padding: 5% 10%;
+}
+a {
+    display: block;
+    text-decoration: none;
+    color: #FFFFFF;
+}
+#cardbody {
+	border-radius: 10px; 
+	height: 100%;
+	background-color: rgba(32,33,37,0.95);
+}
+
+#header {
+	font-family: Questrial;
+	font-size: 6em;
+	text-align: center;
+	padding: 5% 0;
+}
+ #menu {
+ }
+#menu ul {
+     list-style-type: none;
+     margin: 0;
+     padding: 0 30%;
+     width: 40%;
+     overflow: hidden;
+     background-color: #ffffff00;
+}
+
+ #menu li {
+    float: left;
+    width: 25%;
+    text-transform: uppercase;
+ }
+
+ #menu li a {
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 900;
+    padding: 14px 16px;
+    background-color: #FFFFFF;
+    color: #000000;
+ }
+ #menu li a:hover {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #027DEA;
+ }
+ #menu li a.active {
+    text-decoration: none;
+    color: #FFFFFF;
+    background-color: #027DEA;
+ }
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+ }
+ #gallery ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0 5%;
+	padding-bottom:5%;
+    width: 90%;
+    overflow: hidden;
+    background-color: #ffffff00;
+}
+#gallery li {
+    float: left;
+    width: 20%;
+    padding-left: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+#gallery li a {
+    display: block;
+    background-color: rgba(23, 67, 88, 0.5);
+    padding: 14px 16px;
+}
+#gallery li a:hover {
+    background-color: rgba(23, 67, 88, 0.8);
+}
+#gallery li a:hover ~ #buttonbox {
+    background-color: rgba(23, 67, 88, 0.8);
+}
+
+#gallery h1 {
+    font-size: 1.5em;
+    color: white;
+}
+#gallery h2 {
+    font-size: 1em;
+    padding-bottom: 10px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+#buttonbox {
+        width: 100%;
+        background-color: rgba(23, 67, 88, 0.5);
+        padding-bottom: 16px;
+}
+
+.button {
+    display: block;
+    background-color: #027DEA;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+ }
+  /* MOBILE VIEW */
+ @media screen and (max-width: 700px) {
+	 body{
+		 padding: 5% 5%;
+		 background-image: url("/images/bgm.jpg");
+	 }
+	#menu ul {
+		padding: 0 0;
+		width: 100%;
+		font-size: 8pt;
+	 }
+	#header {
+	font-size: 3em;
+	}
+	#gallery li {
+		float: none;
+		width: 98%;
+		padding-left: 1%;
+		padding-bottom: 5%;
+	   }
+}
