@@ -79,12 +79,15 @@ a {
 #gallery li {
     float: left;
     width: 20%;
-    padding-left: 3%;
-    padding-bottom: 3%;
+    padding:3% 3%;
+	padding-right:0;
     text-align: center;
 }
 #gallery li a {
     display: block;
+	border-style:solid;
+	border-color:#027DEA;
+	border-bottom-style:none;
     background-color: rgba(23, 67, 88, 0.5);
     padding: 14px 16px;
 }
@@ -106,13 +109,17 @@ a {
     line-height: 1.6;
 }
 #buttonbox {
-        width: 100%;
+       
         background-color: rgba(23, 67, 88, 0.5);
+		border-style:solid;
+		border-color:#027DEA;
+		border-top-style:none;
         padding-bottom: 16px;
 }
 
 .button {
     display: block;
+	border-radius:50px;
     background-color: #027DEA;
     border: none;
     color: white;
@@ -142,8 +149,6 @@ a {
 	}
 	#gallery li {
 		float: none;
-		width: 98%;
-		padding-left: 1%;
-		padding-bottom: 5%;
+		width: 94%;
 	   }
 }
