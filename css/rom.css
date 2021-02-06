@@ -1,0 +1,28 @@
+h1 {
+    font-size: 5vw;
+    cursor: default;
+    color: aqua;
+}
+
+h2 {
+    white-space: nowrap;
+    font-family: Questrial;
+    font-size: 2vw;
+    cursor: default;
+}
+
+h2 a {
+    white-space: nowrap;
+    color: darkred;
+}
+
+h3 {
+    color: aqua;
+}
+
+h4 {}
+
+img {
+    width: 50vw;
+    border-radius: 25px;
+}

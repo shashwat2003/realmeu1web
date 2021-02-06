@@ -1,0 +1,100 @@
+.gallery {
+    display: grid;
+    grid-column-gap: 4vw;
+    grid-row-gap: 2vh;
+    grid-template-columns: 29vw 29vw;
+    margin: 0 4vw 0 4vw;
+}
+
+.item {
+    border-style: none;
+    padding: 0px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.item a {
+    display: block;
+    border-style: solid;
+    border-color: #027DEA;
+    border-bottom-style: none;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    background-color: rgba(23, 67, 88, 0.5);
+    margin-bottom: 0;
+}
+
+.item a img {
+    margin: 2vh 0 2vh 0;
+    width: 15vw;
+}
+
+.item a:hover {
+    background-color: rgba(23, 67, 88, 0.8);
+}
+
+.item a:hover ~ #buttonbox {
+    background-color: rgba(23, 67, 88, 0.8);
+}
+
+.item h1 {
+    font-size: 1.5vw;
+    color: white;
+}
+
+.item h2 {
+    font-size: 1vw;
+    margin-bottom: 0px;
+    font-weight: lighter;
+    line-height: 1.6;
+}
+
+#buttonbox {
+    background-color: rgba(23, 67, 88, 0.5);
+    border-style: solid;
+    border-color: #027DEA;
+    border-top-style: none;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    padding-bottom: 16px;
+    margin: 0;
+}
+
+.button {
+    display: block;
+    border-radius: 50px;
+    background-color: #027DEA;
+    border: none;
+    color: white;
+    margin: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 0.8vw;
+    cursor: pointer;
+    padding: 14px 32px;
+}
+
+@media screen and (max-width: 1024px) {
+    .gallery {
+        margin: 0 2vw 0 2vw;
+        grid-template-columns: 84vw;
+
+    }
+
+    .item h1 {
+        font-size: 5vw;
+    }
+
+    .item h2 {
+        font-size: 3vw;
+    }
+
+    .item a img {
+        width: 60vw;
+    }
+
+    .button {
+        font-size: 3vw;
+    }
+}

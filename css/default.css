@@ -1,171 +1,79 @@
-
-body {
-	font-family: JosefinSans;
-	font-size: 12pt;
-	color:white;
-	background-color:grey;
-	background-image: url("/images/bg.jpg");
-	background-size: cover;
-	height: 100%;
-	padding: 5% 10%;
+html body {
+    margin: 0;
+    padding: 0;
+    background-image: url("/images/bg.jpg");
+    background-size: cover;
+    font-family: JosefinSans;
 }
+
 a {
     display: block;
     text-decoration: none;
     color: #FFFFFF;
 }
-#cardbody {
-	border-radius: 50px; 
-	height: 100%;
-	background-color: rgba(32,33,37,0.85);
-}
 
-#header {
-	font-family: Questrial;
-	font-size: 6em;
-	text-align: center;
-	padding: 5% 0;
-}
-#menu{ 
-	 position:sticky;
-	 top:0;
- }
-#menu ul {
-     list-style-type: none;
-     margin: 0;
-     padding: 0 30%;
-     width: 40%;
-     overflow: hidden;
-     background-color: #ffffff00;
-}
-
- #menu li {
-    float: left;
-    width: 25%;
-    text-transform: uppercase;
- }
-
- #menu li a {
-    display: block;
-    text-decoration: none;
+.header h1 {
     text-align: center;
-    font-weight: 900;
-    padding: 14px 16px;
-    background-color: #FFFFFF;
-    color: #000000;
- }
- #menu li a:hover {
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #027DEA;
- }
- #menu li a.active {
-    text-decoration: none;
-    color: #FFFFFF;
-    background-color: #027DEA;
- }
- #gallery ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0 5%;
-	padding-bottom:5%;
-    width: 90%;
-    overflow: hidden;
-    background-color: #ffffff00;
-}
-#gallery li {
-    float: left;
-    width: 20%;
-    padding:3% 3%;
-	padding-right:0;
-    text-align: center;
-}
-#gallery li a {
-    display: block;
-	border-style:solid;
-	border-color:#027DEA;
-	border-bottom-style:none;
-    background-color: rgba(23, 67, 88, 0.5);
-    padding: 14px 16px;
-}
-#gallery li a:hover {
-    background-color: rgba(23, 67, 88, 0.8);
-}
-#gallery li a:hover ~ #buttonbox {
-    background-color: rgba(23, 67, 88, 0.8);
-}
-
-#gallery h1 {
-    font-size: 1.5em;
+    font-family: Questrial;
+    font-size: 6vw;
     color: white;
-}
-#gallery h2 {
-    font-size: 1em;
-    padding-bottom: 10px;
-    font-weight: lighter;
-    line-height: 1.6;
-}
-#buttonbox {
-       
-        background-color: rgba(23, 67, 88, 0.5);
-		border-style:solid;
-		border-color:#027DEA;
-		border-top-style:none;
-        padding-bottom: 16px;
+    cursor: default;
 }
 
-.button {
-    display: block;
-	border-radius:50px;
-    background-color: #027DEA;
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    margin: 10px;
+.body {
     text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
- }
-  /*COPYRIGHT*/
+    padding: 5vh 0 5vw 0;
+    margin: 0 10vw 10vh 10vw;
+    background-color: white;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
 
- #copyright {
+.subbody {
+    background-color: rgba(64, 64, 66, 1);
+    color: white;
+    border-radius: 50px;
+    margin: 0 5vw 0 5vw;
+    padding: 5vh 0 0 0;
+}
+
+/*COPYRIGHT*/
+
+#copyright {
     overflow: hidden;
-    padding: 5em 1em;
+    margin-top: 5vh;
+    padding: 2em 1em;
     border-top: 1px solid rgba(255, 255, 255, 0.08);
     text-align: center;
- }
+}
 
- #copyright p {
+#copyright p {
     letter-spacing: 1px;
-	font-size: 1.1em;
+    font-size: 1.1em;
     color: rgba(255, 255, 255, 0.6);
- }
+}
 
 #copyright a {
-	display: inline;
+    display: inline;
     text-decoration: none;
     color: rgba(255, 255, 255, 0.8);
- }
-  /* MOBILE VIEW */
- @media screen and (max-width: 700px) {
-	 body{
-		 padding: 5% 5%;
-		 background-position:center;
-		 background-image: url("/images/bg.jpg");
-	 }
-	#menu ul {
-		padding: 0 0;
-		width: 100%;
-		font-size: 7pt;
-	 }
-	#header {
-	font-size: 3em;
-	}
-	#gallery li {
-		float: none;
-		width: 94%;
-	   }
+}
+
+@media screen and (max-width: 1024px) {
+    .header h1 {
+        font-size: 13vw;
+    }
+
+    .body {
+        margin: 0 2vw 10vh 2vw;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        padding: 5vh 0 2vw 0;
+    }
+
+    .subbody {
+        margin: 0 2vw 0 2vw;
+        border-radius: 25px;
+
+    }
 }
