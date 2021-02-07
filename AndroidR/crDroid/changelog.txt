@@ -1,0 +1,7 @@
+Changelog:
+• Initial Unofficial CrDroid 7.2
+• January Security Patch 
+• Fixed Volte
+• Fixed Hotspot
+• Performance Tweaks
+• Added Blur

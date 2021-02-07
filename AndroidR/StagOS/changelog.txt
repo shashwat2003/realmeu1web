@@ -1,0 +1,7 @@
+Changelog:
+• February Patch
+• Fp Fixed
+• Fixed Volte
+• All changes of Stag OS from February month
+• Hotspot Fixed By Kernels
+• Improvement Performance

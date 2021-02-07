@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="/css/default.css">
+    <link rel="stylesheet" href="/css/navbar.css">
+    <link rel="stylesheet" href="/css/rom.css">
+    <link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" />
+    <title>Realme U1 | SHRP</title>
+</head>
+
+<body>
+    <div class="header">
+        <h1>realme U1<br>Lucifer Community</h1>
+    </div>
+    <div id="navbar">
+        <ul>
+            <li><a href="/">ROMs</a></li>
+            <li><a href="/Kernels">Kernels</a></li>
+            <li><a class="active" style="cursor: pointer;" href="/Recoveries">Recoveries</a></li>
+            <li><a href="/Misc">Misc</a></li>
+        </ul>
+    </div>
+    <div class="body">
+        
+        <div class="subbody">
+
+            <img src="/images/shrp.png">
+            <h1>Sky Hawk Recovery Project</h1>
+            <div class="desbox">
+                <div class="item">
+                    <h2>LATEST BUILD</h2>
+                    <h3>24th Jan 2021 08:32 UTC</h3>
+                </div>
+                <div class="item">
+                    <h2>BUILD STATUS</h2>
+                    <h3>Un-Official</h3>
+                </div>
+                <div class="item">
+                    <h2>BUILD BY</h2>
+                    <h3><a href="http://t.me/I_m_deepak0001">Deepak Sabharwal</a></h3>
+                </div>
+            </div>
+
+
+
+            <h2>SCREENSHOTS</h2>
+            <div id="screenshot">
+                <img src="ss/01.jpg">
+                <img src="ss/02.jpg">
+                <img src="ss/03.jpg">
+                <img src="ss/04.jpg">
+            </div>
+            <button class="button" onclick="document.location='https://drive.google.com/uc?id=1naGx80qJIsSnRGq6zNeF49ZLB3X8OXYx&export=download'">Download</button>
+            <button class="button" onclick="document.location='https://youtu.be/PiaL4Lztcfo'">Install Guide</button>
+                <button class="button" onclick="document.location='changelog.txt'">Changelog</button>
+            <div id="copyright" class="container">
+                <p>
+                    &copy; Developed By <a href="https://www.instagram.com/jaanijunior_13">Shashwat</a>
+                </p>
+            </div>
+        </div>
+
+
+    </div>
+    <script>
+        var image = 0;
+        var slideIndex = 0;
+
+
+        showSlides();
+
+        function showSlides() {
+            var i;
+            var slides = document.getElementById("screenshot").children;
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.opacity = "0.5";
+
+                slides[i].style.transform = 'scale(1, 1)';
+            }
+            if (slideIndex >= slides.length) {
+                slideIndex = 0;
+            }
+            slides[slideIndex].style.opacity = 1;
+            slides[slideIndex].style.transform = 'scale(1.1, 1.1)';
+            slideIndex++;
+            setTimeout(showSlides, 2000);
+        
+        }
+    </script>
+
+</body></html>
