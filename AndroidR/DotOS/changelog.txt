@@ -1,0 +1,6 @@
+Changelog:
+• Initial Unofficial DotOS 5.0
+• February Security Patch 
+• Fixed Volte
+• Performance Tweaks
+• Added Blur
