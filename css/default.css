@@ -1,41 +1,164 @@
-html body {
+html,
+body {
     margin: 0;
     padding: 0;
-    background-image: url("/images/bg.jpg");
-    background-size: cover;
-    font-family: JosefinSans;
-    cursor: default;
+    font-family: Questrial;
+    background: #457fca;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #5691c8, #457fca);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #5691c8, #457fca);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 a {
-    display: block;
     text-decoration: none;
-    color: #FFFFFF;
+    color: inherit;
+}
+
+.header {
+    color: white;
+    height: 10vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+
 }
 
 .header h1 {
-    text-align: center;
-    font-family: Questrial;
-    font-size: 6vw;
-    color: white;
-    cursor: default;
+    font-size: 4vh;
+}
+
+.header h2 {
+    font-size: 3.5vh;
+    font-weight: 100;
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.header .item {
+    display: flex;
+    flex-direction: row;
+}
+
+.navbar {
+    margin: 2vh 0;
+    background-color: white;
+    border-radius: 50px;
+    font-size: 2vh;
+    color: black;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar a {
+    margin: 0 2vw;
+    padding: 12px 18px;
+    transition: 0.5s;
+}
+
+.navbar a.active {
+    display: inline-block;
+    color: #457fca;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    display: inline-block;
+    color: #457fca;
+    border-radius: 10px;
+    font-weight: bold;
 }
 
 .body {
-    text-align: center;
-    padding: 5vh 0 5vw 0;
-    margin: 0 10vw 10vh 10vw;
-    background-color: white;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
+    margin: 5vh 10vw;
+    height: 80vh;
+    display: flex;
+    flex-direction: row;
 }
 
-.subbody {
-    background-color: rgba(64, 64, 66, 1);
+.body .item {
+    display: flex;
+    flex-direction: column;
+    width: 30vw;
+    justify-content: space-between;
+}
+
+.body .item .sub_item {
+    display: flex;
+    flex-direction: column;
+    height: 39vh;
     color: white;
-    border-radius: 50px;
-    margin: 0 5vw 0 5vw;
-    padding: 5vh 0 0 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+}
+
+.body .item h1 {
+    font-size: 4vh;
+}
+
+.body .item h2 {
+    font-size: 2vh;
+    font-weight: 100;
+}
+
+.button {
+    margin: 25px 0 0 0;
+    display: block;
+    border-radius: 10px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 1vw;
+    cursor: pointer;
+    padding: 14px 32px;
+    transition: 0.8s;
+
+}
+
+.button:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.body .slideshow {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50vw;
+}
+
+.body .slideshow .mySlides {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    transition: 2s;
+    animation: fading 2s infinite
+}
+
+@keyframes fading {
+    0% {
+        opacity: 0
+    }
+
+    50% {
+        opacity: 1
+    }
+
+    100% {
+        opacity: 0
+    }
+
+    ;
 }
 
 /*COPYRIGHT*/
@@ -61,22 +184,49 @@ a {
 }
 
 @media screen and (max-width: 1024px) {
+    .header {
+        flex-direction: column;
+        height: auto;
+    }
+
     .header h1 {
-        font-size: 13vw;
+        margin-bottom: 0;
+    }
+
+    .header .item {
+        justify-content: center;
+        flex-wrap: wrap;
     }
 
     .body {
-        margin: 0 2vw 10vh 2vw;
-        border-bottom-left-radius: 25px;
-        border-bottom-right-radius: 25px;
-        padding: 5vh 0 2vw 0;
+        flex-direction: column;
     }
 
-    .subbody {
-        margin: 0 2vw 0 2vw;
-        border-radius: 25px;
+    .body .item {
+        width: 100%;
 
     }
-#copyright{
-padding: 0;}
+
+    .body .item .sub_item {
+        margin: 2vh 0;
+    }
+
+    .body .slideshow {
+        padding: 2vh 0;
+        width: 100%;
+    }
+
+    .button {
+        font-size: 1.5vh;
+    }
+
+    .navbar {
+        margin: 0 2vw;
+        font-size: 1.2vh;
+    }
+
+    #copyright {
+        padding: 0;
+    }
+
 }
