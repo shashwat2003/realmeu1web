@@ -1,97 +1,71 @@
-<!DOCTYPE html>
 <html>
-    <head>
+
+<head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="/css/default.css">
     <link rel="stylesheet" href="/css/navbar.css">
     <link rel="stylesheet" href="/css/rom.css">
     <link rel="stylesheet" href="/css/fonts.css" type="text/css" media="all" />
-    <title>Realme U1 |  CorvusOS</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <title>Realme U1 | R ROMs</title>
 </head>
 
 <body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+            
     <div class="header">
-        <h1>realme U1<br>Lucifer Community</h1>
-    </div>
-    <div id="navbar">
-        <ul>
-            <li><a class="active">ROMs</a></li>
-            <li><a href="/Kernels">Kernels</a></li>
-            <li><a href="/Recoveries">Recoveries</a></li>
-            <li><a href="/Misc">Misc</a></li>
-        </ul>
-    </div>
-    <div class="body">
-        <div id="subnavbar">
-            <ul>
-                <li><a href="/">Android Q</a></li>
-                <li><a class="active" style="cursor: pointer;" href="/AndroidR/">Android R</a></li>
-            </ul>
+        <a href="/" class="item">
+            <h1>realme U1</h1>
+            <h2>| Lucifer Communtiy</h2>
+        </a>
+        <div class="navbar">
+            <a href="/" class="active">ROMS</a>
+            <a href="">KERNELS</a>
+            <a href="">RECOVERIES</a>
+            <a href="">MISC</a>
         </div>
-        <div class="subbody">
+    </div>
 
-            <img style="width: 90%;" src="/images/corvusr.png">
-            <h1>CorvusOS | Android R</h1>
-            <div class="desbox">
-                <div class="item">
-                    <h2>LATEST BUILD</h2>
-                    <h3>22th Feb 2021 07:22 UTC</h3>
-                </div>
-                <div class="item">
-                    <h2>BUILD STATUS</h2>
-                    <h3>Un-Official</h3>
-                </div>
-                <div class="item">
-                    <h2>BUILD BY</h2>
-                    <h3><a href="http://telegram.me/I_am_pronoob">Fahim Ahmad</a></h3>
-                </div>
+    <div class ="rom">
+   
+    <div class="carousel" id="screenshot">
+            <img class="carousel-item" src="ss/01.jpg">
+            <img class="carousel-item" src="ss/02.jpg">
+            <img class="carousel-item" src="ss/03.jpg">
+            <img class="carousel-item" src="ss/04.jpg">
+            <img class="carousel-item" src="ss/05.jpg">
+    </div>
+        <div class="details">
+            <h1>Corvus OS</h1>
+            <h2>👷‍♂️ Build By: Aakash Panchal</h2>
+            <h2>📅 Build Date: 22/06/2021</h2>
+            <h2>⚡ Build Type: Un-Official</h2>
+            <div>
+                <button class="button" onclick="document.location='https://drive.google.com/uc?id=1CwMABJB5UixWcZMEljAxunIObG1Qalnk&export=download'">Download</button>
+                <button class="button" onclick="document.location='https://drive.google.com/uc?id=1CwMABJB5UixWcZMEljAxunIObG1Qalnk&export=download'">Changelog</button>
+                <button class="button" onclick="document.location='https://drive.google.com/uc?id=1CwMABJB5UixWcZMEljAxunIObG1Qalnk&export=download'">Flash Guide</button>
             </div>
+        </div>
+    </div>
 
-
-
-            <h2>SCREENSHOTS</h2>
-            <div id="screenshot">
-                <img src="ss/01.png">
-                <img src="ss/02.png">
-                <img src="ss/03.png">
-                <img src="ss/04.png">
-            </div>
-            <button class="button" onclick="document.location='https://drive.google.com/uc?id=1LgecGfh1KSDv-aZv8EYw-WDN6D9kGd_v&export=download'">Download</button>
-            <button class="button" onclick="document.location='/Misc/InstallGuideR'">Install Guide</button>
-                <button class="button" onclick="document.location='changelog.txt'">Changelog</button>
-            <div id="copyright" class="container">
+<div id="copyright" class="container">
                 <p>
-                    &copy; Developed By <a href="https://www.instagram.com/jaanijunior_13">Shashwat</a>
+                    &copy; Developed By <a href="https://www.instagram.com/jaanijunior_13">Shashwat</a> 
                 </p>
             </div>
-        </div>
 
-
-    </div>
-    <script>
-        var image = 0;
-        var slideIndex = 0;
-
-
-        showSlides();
-
-        function showSlides() {
-            var i;
-            var slides = document.getElementById("screenshot").children;
-            for (i = 0; i < slides.length; i++) {
-                slides[i].style.opacity = "0.5";
-
-                slides[i].style.transform = 'scale(1, 1)';
-            }
-            if (slideIndex >= slides.length) {
-                slideIndex = 0;
-            }
-            slides[slideIndex].style.opacity = 1;
-            slides[slideIndex].style.transform = 'scale(1.1, 1.1)';
-            slideIndex++;
-            setTimeout(showSlides, 2000);
-        
-        }
+<script>
+        $(document).ready(function() {
+            $('#screenshot').carousel({
+                numVisible: 7
+            });
+            setInterval(function() {
+                $('#screenshot').carousel('next');
+            }, 2500);
+        });
     </script>
 
-</body></html>
+</body>
+
+</html>

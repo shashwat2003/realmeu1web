@@ -2,6 +2,109 @@
     display: flex;
     flex-direction: row;
 }
-.ss {
+
+.details {
+    margin: 2vh;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    cursor: default;
+}
+
+.details h1{
+    font-family: JosefinSans;
+    margin: 10vh;
+    font-size: 10vh;
+    color: white;
+}
+.details h2{
+    
+    margin: 0;
+    font-size: 6vh;
+    color: white;
+    font-weight: 100;
+}
+
+.button {
+    display: block;
+    border-radius: 10px;
+    background-color: #027DEA;
+    border: none;
+    color: white;
+    margin: 10vh 2vw;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font: JosefinSans;
+    font-size: 1.5vw;
+    cursor: pointer;
+    padding: 14px 32px;
+    transition: 1s;
+    
+}
+.button:hover{
+    transform: scale(1.2,1.2);
+}
+
+#screenshot {
     width: 40%;
+    height: 80vh;
+}
+#screenshot img{
+   width: auto;
+    height: 90%;
+}
+
+
+
+
+/* Materialize CSS */
+.carousel {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  height: 400px;
+  -webkit-perspective: 500px;
+          perspective: 500px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transform-origin: 0% 50%;
+          transform-origin: 0% 50%;
+}
+
+
+.carousel .carousel-item {
+  visibility: hidden;
+  width: 200px;
+  height: 200px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+@media screen and (max-width: 1024px) {
+    .rom{
+        flex-direction: column-reverse  ;
+    }
+    #screenshot{
+        width: 100%;
+        height: 50vh;
+    }
+    .details{
+        width: 100%;
+    }
+    .details h1{
+        font-size: 7vh;
+        margin: 10vh 0 5vh 0; 
+    }
+    .details h2{
+        font-size: 3vh;
+        margin: 1vh;
+    }
+    .button {
+        font-size: 1.5vh;
+        margin: 3vh 0 0 0;
+    }
 }

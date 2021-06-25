@@ -1,5 +1,0 @@
-• Source Changelog : Here(https://telegram.me/CorvusChannel/645)
-Changelog:
-• February Security Patch 
-• Fixed Volte
-• Performance Tweaks

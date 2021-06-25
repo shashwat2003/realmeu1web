@@ -1,3 +1,0 @@
-Updated Prebuilts to C.20
-Fixed Touch Issues
-Added Notch

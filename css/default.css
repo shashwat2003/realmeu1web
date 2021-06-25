@@ -57,6 +57,8 @@ a {
     margin: 0 2vw;
     padding: 12px 18px;
     transition: 0.5s;
+    background-color: white;
+    color: black;
 }
 
 .navbar a.active {

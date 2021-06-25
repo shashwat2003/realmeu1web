@@ -1,7 +1,0 @@
-• Source Changelog : Here(https://telegram.me/octavi_os/253)
-
-• Device Changelogs
-   -Fixed VoLTE
-   -Fixed Fp clearing bug
-   -Minor Performance tweaks
-   -Fixed Obb file issue 
